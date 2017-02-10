@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sky Drifters :: Drifting for over a year</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee" >
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="vendor/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#a6a6a6">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Sky Drifters">
+    <meta name="application-name" content="Sky Drifters">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#a6a6a6">
+  </head>
+  <body>
+    <section class="full">
+      <div class="center">
+        <h1 id="title" class="animated fadeInDownBig">Sky Drifters</h1>
+        <a href="https://www.worldsadrift.com/alliances/sky-drifters/" class="button animated fadeInUp">Join US in the Drift!</a>
+        <a href="https://www.worldsadrift.com/alliances/sky-drifters/" class="button animated fadeInUp">Talk to us on the Forums!</a>
+        <a href="news.html" class="button animated fadeInUp">Sky Drifters News Network!</a>
+      </div>
+      <span class="center-bottom" style="position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center; color: white; font-size: 1.8rem;">&#x25BC;</span>
+    </section>
+    <section class="full">
+      <div class="center" id="who-we-are">
+        <h2 class="animated fadeInLeft">Who are we?</h2>
+        <ul>
+          <li class="animated fadeInLeft">Worlds Adrift's Biggest Alliance</li>
+          <li class="animated fadeInRight">More than 500 Members and Rising</li>
+        </ul>
+        <p class="animated fadeInRight">We are the Sky Drifters! The soon to be world controlling empire of Worlds Adrift. To achieve our goal of domination we will create a vast network of ships we call can upon at any time to form a battle-force wherever it is needed. Spearheaded by the great mechanical titan of the skies Lelanthos, there shall be no force stronger than us! Our secondary goal is to gather, preserve and exploit the knowledge of the past civilizations. Whatever form we may find it: Books, Maps, Photos it will be added to our floating library. In order to fuel such an endeavour, we intend to partake in privateering and mass harvesting all resources we may come across. With you we can become the military power that will rule the skies with an iron fist! You want to join our ranks? Check our public forum for some directions. Glory to the Emperor of these skies!</p>
+      </div>
+    </section>
+    <section class="full">
+      <div class="center" id="members">
+        <h2 class="animated fadeInDown">Command</h2>
+        <span class="rank" id="emperor">
+          <h3 class="animated fadeIn">Chief of the Drift</h3>
+          <p class="animated fadeIn">Dayox</p>
+        </span>
+        <span class="rank" id="commander">
+          <h3 class="animated fadeIn">Sky Mods/Councillors</h3>
+          <p class="animated fadeIn">Greenjuice &#124; DrDeath8250 &#124; Node &#124; Razordor &#124; HawkEye</p>
+        </span>
+        <span class="rank" id="commodore">
+          <h3 class="animated fadeIn">Members</h3>
+          <p class="animated fadeIn">Over 180 people willing to drift with us!</p>
+        </span>
+      </div>
+    </section>
+    <section class="full">
+      <div class="center">
+        <h2 class="animated fadeInLeft">Discord</h2>
+        <iframe class="animated fadeInRight" src="https://discordapp.com/widget?id=112547805666541568&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+      </div>
+    </section>
+    <section class="full">
+      <div class="center">
+        <a href="ranks.html" class="button large animated fadeInRight">View Our Ranks</a>
+      </div>
+    </section>
+    <section class="full">
+      <div class="center animated fadeIn">
+        <h2>Meeting Times</h2>
+        <h2 id="meeting-countdown"></h2>
+        <p>We host occasional Social Nights every week at a time to suit us on our discord server with some games as well. Come along if you wish to hang out!</p>
+      </div>
+    </section>
+    <section class="full">
+      <div class="center animated fadeIn">
+        <h2>Privacy</h2>
+        <p>We don't Google Analytics or Cookies to find out how many people come to admire our Sky Drifter Website! You needn't opt out of these analytics at any time by disabling cookies in your browser since we dont use them!</p>
+      </div>
+    </section>
+    <img id="logo" class="animated fadeIn" src="armada.svg">
+    <script src="vendor/jquery-3.1.1.min.js"></script>
+    <script src="vendor/jquery.backstretch.min.js"></script>
+    <script src="vendor/parallax.min.js"></script>
+    <script src="vendor/jquery.countdown.min.js"></script>
+    <script src="vendor/date.js"></script>
+    <script>
+      function nextDay(x){
+        var now = new Date();
+        now.setDate(now.getDate() + (x+(7-now.getDay())) % 7);
+        return now;
+      }
+
+      function formatDate(date) {
+        var d = new Date(date),
+          month = '' + (d.getMonth() + 1),
+          day = '' + d.getDate(),
+          year = d.getFullYear();
+
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+
+        return [year, month, day].join('/');
+      }
+
+      $(document).ready(function(){
+        //$("section:first-child").backstretch("images/section-one.jpg");
+        $("section:nth-of-type(1)").parallax({imageSrc: "images/section-one.jpg"});
+        $("section:nth-of-type(3)").parallax({imageSrc: "images/section-three.jpg"});
+        $("section:nth-of-type(5)").parallax({imageSrc: "images/section-five.jpg"});
+        $("section:nth-of-type(7)").parallax({imageSrc: "images/section-three.jpg"});
+        $("#meeting-countdown").countdown(new Date(formatDate(nextDay(6)) + " 21:00:00 UTC"), function(event) {
+          $(this).text(
+            event.strftime('%D days %H:%M:%S')
+          );
+        });
+
+        $("#meeting-countdown").on("click", function(){
+          $("#meeting-countdown + p").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

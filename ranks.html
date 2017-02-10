@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sky Drifter &ndash; Ranks</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee" >
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="vendor/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#a6a6a6">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Sky Drifters">
+    <meta name="application-name" content="Sky Drifters">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#a6a6a6">
+
+  </head>
+  <body>
+    <section class="full">
+      <div class="center">
+        <h1 id="title" class="animated fadeInDownBig">Drifter Ranks</h1>
+        <a href="index.html" class="button animated fadeInUp">Go Back</a>
+      </div>
+      <span class="center-bottom" style="position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center; color: white; font-size: 1.8rem;">&#x25BC;</span>
+    </section>
+    <section class="full">
+      <div class="center">
+        <h2 class="animated fadeInDown">Overview</h2>
+        <h3 class="animated rollIn" style="color: orange">Chief</h3>
+        <h3 class="animated rollIn" style="color: red">Sky Mod/ Councillor</h3>
+		<h3 class="animated rollIn" style="color: skyblue">Members</h3>
+      </div>
+      <span class="center-bottom" style="position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center; color: black; font-size: 1.8rem;">&#x25BC;</span>
+    </section>
+    <section class="full">
+      <div class="center">
+        <h2 class="animated fadeInDown" style="color: orange; border-color: orange !important;">Chief of the Drifters</h2>
+        <span class="rank">
+          <h3 class="animated fadeIn">Current Holder</h3>
+          <p class="animated fadeIn">Dayox</p>
+        </span>
+        <span class="rank">
+          <h3 class="animated fadeIn">Role Duties</h3>
+          <p class="animated fadeIn">Has complete control of the group. Tasked with organising and maintaining everyone and failing to certain degrees.</p>
+        </span>
+      </div>
+    </section>
+	    <section class="full">
+      <div class="center">
+        <h2 class="animated fadeInDown" style="color: red; border-color: red !important;">Sky Mod/Councillor</h2>
+        <span class="rank">
+          <h3 class="animated fadeIn">Current Holders</h3>
+          <p class="animated fadeIn">Greenjuice, DrDeath, Node, Razordor, HawkEye</p>
+        </span>
+        <span class="rank">
+          <h3 class="animated fadeIn">Role Duties</h3>
+          <p class="animated fadeIn">In charge of a moderating the Drifters. Also helps with decision making and settling disputes.</p>
+        </span>
+      </div>
+    </section>
+    <section class="full">
+      <div class="center">
+        <h2 class="animated fadeInDown" style="color: skyblue; border-color: skyblue !important;">Members</h2>
+        <span class="rank">
+          <h3 class="animated fadeIn">Current Holders</h3>
+          <p class="animated fadeIn">Over 180 people happy to don the name "Sky Hobo" or Sky Drifter</p>
+        </span>
+        <span class="rank">
+          <h3 class="animated fadeIn">Role Duties</h3>
+          <p class="animated fadeIn">A highly trusted member of the Drifters. Tasked with controlling his/her own life. Has a high influence in decision making.</p>
+        </span>
+      </div>
+    </section>
+    <img id="logo" class="animated fadeIn" src="armada.svg">
+    <script src="vendor/jquery-3.1.1.min.js"></script>
+    <script src="vendor/jquery.backstretch.min.js"></script>
+    <script src="vendor/parallax.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        //$("section:first-child").backstretch("images/section-one.jpg");
+        $("section:nth-of-type(1)").parallax({imageSrc: "images/section-one.jpg"});
+        $("section:nth-of-type(3)").parallax({imageSrc: "images/section-three.jpg"});
+        $("section:nth-of-type(5)").parallax({imageSrc: "images/section-five.jpg"});
+        $("section:nth-of-type(7)").parallax({imageSrc: "images/section-one.jpg"});
+      });
+    </script>
+  </body>
+</html>
